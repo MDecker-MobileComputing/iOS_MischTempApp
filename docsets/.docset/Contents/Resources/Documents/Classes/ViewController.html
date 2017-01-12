@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ViewController" class="dashAnchor"></a>
+    <a title="ViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MischTemperaturRechner.html">MischTemperaturRechner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MischTemperaturRechner_v2.html">MischTemperaturRechner_v2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TemperaturError.html">TemperaturError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WasserMengenError.html">WasserMengenError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F12MischTempApp19berechneWassermengeFzT17tempHeissesWasserSi16tempKaltesWasserSi8tempZielSi18literHeissesWasserSd_Sd">berechneWassermenge(tempHeissesWasser:tempKaltesWasser:tempZiel:literHeissesWasser:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">UITextFieldDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Einzige ViewController-Klasse der App.
+Die Klasse enthält mehrere Methoden, die alle dieselbe Berechnung durchführen,
+aber die Fehlerbehandlung auf unterschiedliche Weisen implementieren.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController17gradCelsiusStringSS"></a>
+                    <a name="//apple_ref/swift/Property/gradCelsiusString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController17gradCelsiusStringSS">gradCelsiusString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String-Konstante mit Temperatur-Einheit <q>°C</q> (Grad Celsius), zum Anhängen an Anzeige-Texte.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">gradCelsiusString</span> <span class="o">=</span> <span class="s">"°C"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController23ergebnisWertFormatiererCSo15NumberFormatter"></a>
+                    <a name="//apple_ref/swift/Property/ergebnisWertFormatierer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController23ergebnisWertFormatiererCSo15NumberFormatter">ergebnisWertFormatierer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Formatierer-Objekt für den Ergebniswert (Liter kaltes Wasser), 
+für Darstellung mit immer genau einer Nachkommastelle.
+Wird mit einem Closure initialisiert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">ergebnisWertFormatierer</span><span class="p">:</span><span class="kt">NumberFormatter</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Outlets"></a>
+                <a name="//apple_ref/swift/Section/Outlets" class="dashAnchor"></a>
+                <a href="#/Outlets">
+                  <h3 class="section-name">Outlets</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController23sliderTempHeissesWasserXwGSQCSo8UISlider_"></a>
+                    <a name="//apple_ref/swift/Property/sliderTempHeissesWasser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController23sliderTempHeissesWasserXwGSQCSo8UISlider_">sliderTempHeissesWasser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zum Einstellen der Heißwassertemperatur; Bereich: 0°C bis 100°C, jeweils einschließlich.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sliderTempHeissesWasser</span><span class="p">:</span> <span class="kt">UISlider</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController22sliderTempKaltesWasserXwGSQCSo8UISlider_"></a>
+                    <a name="//apple_ref/swift/Property/sliderTempKaltesWasser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController22sliderTempKaltesWasserXwGSQCSo8UISlider_">sliderTempKaltesWasser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zum Einstellen der Kaltwassertemperatur; Bereich: 0°C bis 100°C, jeweils einschließlich.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sliderTempKaltesWasser</span> <span class="p">:</span> <span class="kt">UISlider</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController14sliderTempZielXwGSQCSo8UISlider_"></a>
+                    <a name="//apple_ref/swift/Property/sliderTempZiel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController14sliderTempZielXwGSQCSo8UISlider_">sliderTempZiel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zum Einstellen der Zieltemperatur (gewünschte Misch-Temperatur);
+Bereich: 0°C bis 100°C, jeweils einschließlich.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sliderTempZiel</span>         <span class="p">:</span> <span class="kt">UISlider</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController22labelTempHeissesWasserXwGSQCSo7UILabel_"></a>
+                    <a name="//apple_ref/swift/Property/labelTempHeissesWasser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController22labelTempHeissesWasserXwGSQCSo7UILabel_">labelTempHeissesWasser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zur Anzeige der mit zugehörigem Slider aktuell eingestellten Heißwassertemperatur.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">labelTempHeissesWasser</span><span class="p">:</span>  <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController21labelTempKaltesWasserXwGSQCSo7UILabel_"></a>
+                    <a name="//apple_ref/swift/Property/labelTempKaltesWasser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController21labelTempKaltesWasserXwGSQCSo7UILabel_">labelTempKaltesWasser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zur Anzeige der mit zugehörigem Slider aktuell eingestellten Kaltwassertemperatur.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">labelTempKaltesWasser</span> <span class="p">:</span>  <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController13labelTempZielXwGSQCSo7UILabel_"></a>
+                    <a name="//apple_ref/swift/Property/labelTempZiel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController13labelTempZielXwGSQCSo7UILabel_">labelTempZiel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UI-Element zur Anzeige der mit zugehörigem Slider aktuell eingestellten Zieltemperatur (Mischtemperatur).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">labelTempZiel</span>         <span class="p">:</span>  <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12MischTempApp14ViewController27textFieldMengeHeissesWasserXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/textFieldMengeHeissesWasser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12MischTempApp14ViewController27textFieldMengeHeissesWasserXwGSQCSo11UITextField_">textFieldMengeHeissesWasser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Textfeld zur Eingabe der Heißwassermenge; wird in Methode <code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewController11viewDidLoadFT_T_">viewDidLoad()</a></code>
+so konfiguriert, dass nur Ganzzahlwerte in dieses Feld eingegeben
+werden können.
+Die in diesem Feld eingegebene Wassermenge kann mit der Methode
+<code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1019getHeisswasserLiterFT_Sd">getHeisswasserLiter()</a></code> ausgelesen werden.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">textFieldMengeHeissesWasser</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions%20(Event-Handler-Methoden)"></a>
+                <a name="//apple_ref/swift/Section/Actions (Event-Handler-Methoden)" class="dashAnchor"></a>
+                <a href="#/Actions%20(Event-Handler-Methoden)">
+                  <h3 class="section-name">Actions (Event-Handler-Methoden)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController29onSliderTempKaltWasserChangedFCSo8UISliderT_"></a>
+                    <a name="//apple_ref/swift/Method/onSliderTempKaltWasserChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController29onSliderTempKaltWasserChangedFCSo8UISliderT_">onSliderTempKaltWasserChanged(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Änderung Kaltwasser-Temperatur mit Slider-Element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onSliderTempKaltWasserChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISlider</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController32onSliderTempHeissesWasserChangedFCSo8UISliderT_"></a>
+                    <a name="//apple_ref/swift/Method/onSliderTempHeissesWasserChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController32onSliderTempHeissesWasserChangedFCSo8UISliderT_">onSliderTempHeissesWasserChanged(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Änderung Heißwasser-Temperatur mit Slider-Element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onSliderTempHeissesWasserChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISlider</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onSliderTempZielTempChangedFCSo8UISliderT_"></a>
+                    <a name="//apple_ref/swift/Method/onSliderTempZielTempChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onSliderTempZielTempChangedFCSo8UISliderT_">onSliderTempZielTempChanged(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Änderung Ziel-Temperatur (Misch-Temperatur) mit Slider-Element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onSliderTempZielTempChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISlider</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch1FCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitCatch1(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch1FCSo8UIButtonT_">onButtonBerechnungMitCatch1(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Catch 1</q>, führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitCatch1</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch2FCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitCatch2(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch2FCSo8UIButtonT_">onButtonBerechnungMitCatch2(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Catch 2</q>, führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitCatch2</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch3FCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitCatch3(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onButtonBerechnungMitCatch3FCSo8UIButtonT_">onButtonBerechnungMitCatch3(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Catch 3</q>, führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitCatch3</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onButtonBerechnungMitTryOptFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitTryOpt(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onButtonBerechnungMitTryOptFCSo8UIButtonT_">onButtonBerechnungMitTryOpt(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Try?</q> (optional try), führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitTryOpt</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController29onButtonBerechnungMitTryForceFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitTryForce(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController29onButtonBerechnungMitTryForceFCSo8UIButtonT_">onButtonBerechnungMitTryForce(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Try!</q> (forced try), führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitTryForce</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController24onButtonBerechnungMitOOPFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitOOP(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController24onButtonBerechnungMitOOPFCSo8UIButtonT_">onButtonBerechnungMitOOP(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>OOP</q>, führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitOOP</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController26onButtonBerechnungMitGuardFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitGuard(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController26onButtonBerechnungMitGuardFCSo8UIButtonT_">onButtonBerechnungMitGuard(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Guard</q>, führt Formel-Berechnung aus.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitGuard</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitDefer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_">onButtonBerechnungMitDefer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Defer</q>, führt Formel-Berechnung durch.
+Unabhängig vom Erfolg der Berechnung (d.h. auch dann wenn ein
+Fehler geworfen wird) werden die drei Slider auf zulässige
+Start-Werte gesetzt.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitDefer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController27onButtonBerechnungMitAssertFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitAssert(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController27onButtonBerechnungMitAssertFCSo8UIButtonT_">onButtonBerechnungMitAssert(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Assert</q>, führt Formel-Berechnung durch.
+Wenn eine der drei Temperatur-Werte außerhalb des zulässigen Bereichs 
+von echt-größer 0°C und echt-kleiner 100°C liegt, dann wird die App
+abgebrochen (aber nur wenn für Konfiguration <code>DEBUG</code> gebaut).</p>
+
+<p>Bitte in der Doku zu Methode <code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewController29berechnungDurchfuehren_AssertFT_T_">berechnungDurchfuehren_Assert()</a></code> nachlesen
+wie das Projekt für einen <code>DEBUG</code>-Build zu konfigurieren ist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitAssert</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController31onButtonBerechnungMitFatalErrorFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitFatalError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController31onButtonBerechnungMitFatalErrorFCSo8UIButtonT_">onButtonBerechnungMitFatalError(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>FatalError</q>, führt Formel-Berechnung durch.
+Wenn eine der drei Temperatur-Werte außerhalb des zulässigen Bereichs
+von echt-größer 0°C und echt-kleiner 100°C liegt, dann wird die App
+abgebrochen, und zwar unabhängig von der Build-Konfiguration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitFatalError</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%22Normale%22%20Methoden"></a>
+                <a name="//apple_ref/swift/Section/&quot;Normale&quot; Methoden" class="dashAnchor"></a>
+                <a href="#/%22Normale%22%20Methoden">
+                  <h3 class="section-name">&quot;Normale&quot; Methoden</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController11viewDidLoadFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController11viewDidLoadFT_T_">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode sorgt dafür, dass zum Start die drei Textfelder den aktuellen Wert der jeweiligen Slider anzeigen.
+Außerdem wird das Textfeld für die Eingabe der Heißwassermenge so konfiguriert, dass nur zulässige Ganzzahlen
+eingegeben werden können.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1011zeigeDialogFSST_"></a>
+                    <a name="//apple_ref/swift/Method/zeigeDialog(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1011zeigeDialogFSST_">zeigeDialog(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Funktion zur Anzeige eines Textes mit einem modalen Dialog (ohne Titel).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">zeigeDialog</span><span class="p">(</span><span class="n">_</span> <span class="nv">meldung</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>meldung</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Eigentlicher Meldungs-Text, der mit einem Dialog angezeigt werden soll.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1019getHeisswasserLiterFT_Sd"></a>
+                    <a name="//apple_ref/swift/Method/getHeisswasserLiter()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1019getHeisswasserLiterFT_Sd">getHeisswasserLiter()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zum Auslesen der Kaltwassermenge in Liter, die im vom Outlet
+<code><a href="../Classes/ViewController.html#/s:vC12MischTempApp14ViewController27textFieldMengeHeissesWasserXwGSQCSo11UITextField_">textFieldMengeHeissesWasser</a></code> repräsentierten Textfeld gerade eingegeben
+ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
+(Milli-Liter) eingegeben werden können.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getHeisswasserLiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Heißwassermenge (Liter)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Berechnungs-Methoden"></a>
+                <a name="//apple_ref/swift/Section/Berechnungs-Methoden" class="dashAnchor"></a>
+                <a href="#/Berechnungs-Methoden">
+                  <h3 class="section-name">Berechnungs-Methoden</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v1FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_v1()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v1FT_T_">berechnungDurchfuehren_v1()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
+<strong>Version 1:</strong> Nur Default-Catch für Fehlerbehandlung.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_v1</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v2FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_v2()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v2FT_T_">berechnungDurchfuehren_v2()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
+<strong>Version 2:</strong> Catch-Blöcke für verschiedene Fehler-Typen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_v2</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v3FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_v3()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v3FT_T_">berechnungDurchfuehren_v3()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
+<strong>Version 3:</strong> Ein Catch-Block mit Switch-Case zur Unterscheidung der verschiedenen Temperatur-Fehler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_v3</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v4FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_v4()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v4FT_T_">berechnungDurchfuehren_v4()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
+<strong>Version 4:</strong> Fehlerbehandlung im sog. <em>Optional Try</em> (<code>try?</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_v4</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v5FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_v5()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController25berechnungDurchfuehren_v5FT_T_">berechnungDurchfuehren_v5()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
+<strong>Version 5:</strong> Fehlerbehandlung mit sog. <em>Forced try</em> (<code>try!</code>).
+- attention: Wenn die Berechnungs-Funktion einen Fehler wirft, dann stürzt die App ab.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_v5</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController26berechnungDurchfuehren_OOPFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_OOP()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController26berechnungDurchfuehren_OOPFT_T_">berechnungDurchfuehren_OOP()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diese Methode macht dasselbe wie die Methode <code>berechnungDurchfuehren</code>, verwendet statt der <strong>Funktion</strong>
+<code>berechneWassermenge</code> aber die <strong>Klasse</strong> <code><a href="../Classes/MischTemperaturRechner.html">MischTemperaturRechner</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_OOP</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController28berechnungDurchfuehren_GuardFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_Guard()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController28berechnungDurchfuehren_GuardFT_T_">berechnungDurchfuehren_Guard()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wie Methode <code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewController26berechnungDurchfuehren_OOPFT_T_">berechnungDurchfuehren_OOP()</a></code>, nur dass jetzt eine Instanz der Klasse
+<code>MischTemperaturRechner_V2</code> verwendet wird, in der die Methode <code>berecheKaltwassermenge)</code>
+so überschrieben ist, dass die Fehler unter Verwendung des Schlüsselworts <code>guard</code>ausgelöst
+werden.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_Guard</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController28berechnungDurchfuehren_DeferFzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_Defer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController28berechnungDurchfuehren_DeferFzT_T_">berechnungDurchfuehren_Defer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Durchführung der Berechnung mit einem <code>defer</code>-Block, der unmittelbar vor
+Verlassen des umgebenden Blocks (hier: Rumpf der Methode) ausgeführt wird,
+egal wie der Block beendet wurde. Für die Fehlerbehandlung kann <code>defer</code>
+deshalb in etwa die Funktion des aus dem Exception-Handling bei anderen
+Programmiersprachen bekannten <code>finally</code>-Blocks übernehmen.
+In der Methode wird <code>defer</code> dafür verwendet, die Eingabewerte der
+drei Slider auf (zulässige) Start-Werte zu setzen, egal ob die
+Berechnung durchgeführt werden konnte oder ein Fehler an den 
+Aufrufer hochgereicht wird.</p>
+
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    <p><code>defer</code> kann auch für andere Dinge als Fehlerbehandlung
+         eingesetzt werden.</p>
+
+</div>
+
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    <p>Defer-Block wird nur dann wirksam, wenn er vor dem Verlassen
+         des Blocks abgearbeitet wurde (er darf deshalb hier nicht
+         nach dem Aufruf der Berechnungs-Methode, die einen Fehler
+         werfen kann, stehen).</p>
+
+</div>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Wenn die in dieser Methode aufgerufene Funktion <code>berechneWassermenge()</code>
+      einen Fehler wirft, dann wird dieser einach an die aufrufende Methode
+      (die Event-Handler-Methode) durchgereicht.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_Defer</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController29berechnungDurchfuehren_AssertFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_Assert()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController29berechnungDurchfuehren_AssertFT_T_">berechnungDurchfuehren_Assert()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Die Variante der Fehlerbehandlung verwendet zu Beginn einige <code>assert</code>-Statements,
+um eine Bedingungen (bool&#39;scher Ausdruck) zu definieren, die erfüllt sein müssen;
+sind diese Bedingungen aber nicht erfüllt, dann wird eine für die Konfiguration
+<code>DEBUG</code> gebaute App abgebrochen. Die im <code>assert</code>-Statement als zweiter Parameter
+übergebene Fehlerbeschreibung wird dabei auf der XCode-Konsole ausgegeben.
+Wenn die App für die Konfiguration <code>RELEASE</code>gebaut wurde, dann wird ein <code>assert</code>
+mit nicht erfüllter Bedingung einfach ignoriert.</p>
+
+<p>Die Konsole muss ggf. noch sichtbar gemacht werden, wozu eine der beiden folgenden
+Möglichkeiten genutzt werden kann:
+* Menü-Eintrag: <code>View | Debug Area | Activate Console</code> 
+* Tasten-Kombination: <code>Shift+Cmd+C</code>
+Die Konsole sollte rechts unten in XCode erscheinen.</p>
+
+<p>Build-Konfiguration einstellen:
+* In <q>Project Navigation</q> auf den obersten Eintrag klicken (Projekt selbst).
+* In Hauptfenster auf Tab <q>Build Settings</q>.
+* Mit Suchfunktion nach <code>SWIFT_OPTIMIZATION_LEVEL</code> suchen.
+* Wenn als Wert “None [-Onone]“ eingestellt ist, dann wird ein <code>DEBUG</code>-Build
+  erstellt, d.h. die App bricht bei einer nicht erfüllten Assertion ab.
+* Für einen anderen Wert (<q>Fast, Single-File Optimization [-O]</q> oder 
+  “Fast, Whole Module Optimization [-O -whole-module-optimization]“ wird ein
+  <code>RELEASE</code>-Build erzeugt.
+* Über einen App-Store können nur <code>RELEASE</code>-Builds verteilt werden, d.h. das <code>assert</code>-
+  Statement zur Fehlersuche kann nur für Haus-interne Tests verwendet werden.
+* Siehe auch <a href="http://blog.krzyzanowskim.com/2015/03/09/swift-asserts-the-missing-manual/">diesen Blog-Artikel</a>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_Assert</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController33berechnungDurchfuehren_FatalErrorFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/berechnungDurchfuehren_FatalError()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController33berechnungDurchfuehren_FatalErrorFT_T_">berechnungDurchfuehren_FatalError()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Diese Variante der Fehlerbehandlung verwendet die Funktion <code>fatalError()</code>,
+um bei einem ungültigen Wert für eine der drei Temperaturen die App
+abzubrechen (unbhängig von der Build-Konfiguration). Ein <code>fatalError</code> kann
+nicht abgefangen werden. Die der Funktion <code>fatalError()</code> übergebene
+Fehlermeldung wird in der XCode-Konsole ausgegeben; siehe Erklärung
+in Dokumentation zu Methode <code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewController29berechnungDurchfuehren_AssertFT_T_">berechnungDurchfuehren_Assert()</a></code>, wie diese
+Konsole eingeblendet werden kann.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">berechnungDurchfuehren_FatalError</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController26keyboardVerschwindenLassenFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/keyboardVerschwindenLassen()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController26keyboardVerschwindenLassenFT_T_">keyboardVerschwindenLassen()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für den in der Methode <code><a href="../Classes/ViewController.html#/s:FC12MischTempApp14ViewController11viewDidLoadFT_T_">viewDidLoad()</a></code> definierten Tap-Recognizer,
+um das Keyboard wieder verschwinden zu lassen,
+wenn nach Eingabe in UITextField-Instanz an eine Stelle außerhalb des Keyboards getappt wird.
+Ruft auch Berechnung auf.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">keyboardVerschwindenLassen</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController9textFieldFTCSo11UITextField24shouldChangeCharactersInVSC8_NSRange17replacementStringSS_Sb"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:shouldChangeCharactersIn:replacementString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController9textFieldFTCSo11UITextField24shouldChangeCharactersInVSC8_NSRange17replacementStringSS_Sb">textField(_:shouldChangeCharactersIn:replacementString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode aus Protocol <code>UITextFieldDelegate</code> überschreiben, damit nur Zahlen eingegeben werden können.
+Siehe auch <a href="http://stackoverflow.com/a/40989129/1364368">diese Antwort auf stackoverflow.com</a>.
+Methode wird für jeden Tastendruck (auch Loeschung) aufgerufen, also sind in replacementString einzelne Zeichen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="n">shouldChangeCharactersIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="n">replacementString</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>false</code> wenn die Textänderung verworfen werden soll.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewController23didReceiveMemoryWarningFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController23didReceiveMemoryWarningFT_T_">didReceiveMemoryWarning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Nicht benötigte Methode</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">didReceiveMemoryWarning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
