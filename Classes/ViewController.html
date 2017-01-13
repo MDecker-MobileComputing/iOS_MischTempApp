@@ -1123,31 +1123,39 @@ Aufrufer hochgereicht wird.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Die Variante der Fehlerbehandlung verwendet zu Beginn einige <code>assert</code>-Statements,
-um eine Bedingungen (bool&#39;scher Ausdruck) zu definieren, die erfüllt sein müssen;
-sind diese Bedingungen aber nicht erfüllt, dann wird eine für die Konfiguration
+um Bedingungen (bool&#39;scher Ausdrücke) zu definieren, die erfüllt sein müssen;
+ist eine dieser Bedingungen nicht erfällt, dann wird eine für die Konfiguration
 <code>DEBUG</code> gebaute App abgebrochen. Die im <code>assert</code>-Statement als zweiter Parameter
 übergebene Fehlerbeschreibung wird dabei auf der XCode-Konsole ausgegeben.
-Wenn die App für die Konfiguration <code>RELEASE</code>gebaut wurde, dann wird ein <code>assert</code>
+Wenn die App für die Konfiguration <code>RELEASE</code> gebaut wurde, dann wird ein <code>assert</code>
 mit nicht erfüllter Bedingung einfach ignoriert.</p>
 
-<p>Die Konsole muss ggf. noch sichtbar gemacht werden, wozu eine der beiden folgenden
-Möglichkeiten genutzt werden kann:
-* Menü-Eintrag: <code>View | Debug Area | Activate Console</code> 
-* Tasten-Kombination: <code>Shift+Cmd+C</code>
-Die Konsole sollte rechts unten in XCode erscheinen.</p>
+<p><a href='#konsole-sichtbar-machen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='konsole-sichtbar-machen'>Konsole sichtbar machen</h3></p>
 
-<p>Build-Konfiguration einstellen:
-* In <q>Project Navigation</q> auf den obersten Eintrag klicken (Projekt selbst).
-* In Hauptfenster auf Tab <q>Build Settings</q>.
-* Mit Suchfunktion nach <code>SWIFT_OPTIMIZATION_LEVEL</code> suchen.
-* Wenn als Wert “None [-Onone]“ eingestellt ist, dann wird ein <code>DEBUG</code>-Build
-  erstellt, d.h. die App bricht bei einer nicht erfüllten Assertion ab.
-* Für einen anderen Wert (<q>Fast, Single-File Optimization [-O]</q> oder 
-  “Fast, Whole Module Optimization [-O -whole-module-optimization]“ wird ein
-  <code>RELEASE</code>-Build erzeugt.
-* Über einen App-Store können nur <code>RELEASE</code>-Builds verteilt werden, d.h. das <code>assert</code>-
-  Statement zur Fehlersuche kann nur für Haus-interne Tests verwendet werden.
-* Siehe auch <a href="http://blog.krzyzanowskim.com/2015/03/09/swift-asserts-the-missing-manual/">diesen Blog-Artikel</a>.</p>
+<p>Die XCode-Konsole kann ggf. mit einer der folgenden beiden Möglichkeiten eingeblendet
+eingeblendet werden:</p>
+
+<ul>
+<li>Menü-Eintrag: <code>View | Debug Area | Activate Console</code></li>
+<li>Tasten-Kombination: <code>Shift+Cmd+C</code>
+Die Konsole sollte rechts unten in XCode erscheinen.</li>
+</ul>
+
+<p><a href='#build-konfiguration-einstellen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='build-konfiguration-einstellen'>Build-Konfiguration einstellen</h3></p>
+
+<ul>
+<li>Im <q>Project Navigation</q> auf den obersten Eintrag klicken (Projekt selbst).</li>
+<li>In Hauptfenster auf Tab <q>Build Settings</q>.</li>
+<li>Mit Suchfunktion nach <code>SWIFT_OPTIMIZATION_LEVEL</code> suchen.</li>
+<li>Wenn als Wert “None [-Onone]“ eingestellt ist, dann wird ein <code>DEBUG</code>-Build
+erstellt, d.h. die App bricht bei einer nicht erfüllten Assertion ab.</li>
+<li>Für einen anderen Wert (<q>Fast, Single-File Optimization [-O]</q> oder 
+“Fast, Whole Module Optimization [-O -whole-module-optimization]“ wird ein
+<code>RELEASE</code>-Build erzeugt.</li>
+<li>Über einen App-Store können nur <code>RELEASE</code>-Builds verteilt werden, d.h. das <code>assert</code>-
+Statement zur Fehlersuche kann nur für Haus-interne Tests verwendet werden.</li>
+<li>Siehe auch <a href="http://blog.krzyzanowskim.com/2015/03/09/swift-asserts-the-missing-manual/">diesen Blog-Artikel</a>.</li>
+</ul>
 
                       </div>
                       <div class="declaration">
