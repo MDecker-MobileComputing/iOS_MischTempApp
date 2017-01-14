@@ -574,6 +574,36 @@ Die in diesem Feld eingegebene Wassermenge kann mit der Methode
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_"></a>
+                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitDefer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_">onButtonBerechnungMitDefer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event-Handler-Methode für Button <q>Defer</q>, führt Formel-Berechnung durch.
+Unabhängig vom Erfolg der Berechnung (d.h. auch dann wenn ein
+Fehler geworfen wird) werden die drei Slider auf zulässige
+Start-Werte gesetzt.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitDefer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:FC12MischTempApp14ViewController24onButtonBerechnungMitOOPFCSo8UIButtonT_"></a>
                     <a name="//apple_ref/swift/Method/onButtonBerechnungMitOOP(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:FC12MischTempApp14ViewController24onButtonBerechnungMitOOPFCSo8UIButtonT_">onButtonBerechnungMitOOP(_:)</a>
@@ -619,36 +649,6 @@ Die in diesem Feld eingegebene Wassermenge kann mit der Methode
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitGuard</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_"></a>
-                    <a name="//apple_ref/swift/Method/onButtonBerechnungMitDefer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC12MischTempApp14ViewController26onButtonBerechnungMitDeferFCSo8UIButtonT_">onButtonBerechnungMitDefer(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Event-Handler-Methode für Button <q>Defer</q>, führt Formel-Berechnung durch.
-Unabhängig vom Erfolg der Berechnung (d.h. auch dann wenn ein
-Fehler geworfen wird) werden die drei Slider auf zulässige
-Start-Werte gesetzt.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">onButtonBerechnungMitDefer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -834,7 +834,60 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Heißwassermenge (Liter)</p>
+                        <p>Heißwassermenge in Liter</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1018formatiereErgebnisFSdSS"></a>
+                    <a name="//apple_ref/swift/Method/formatiereErgebnis(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12MischTempApp14ViewControllerP33_9808FDF14AD39DBC4C4AECDDF71BAA1018formatiereErgebnisFSdSS">formatiereErgebnis(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Methode zur Formatierung der Ergebnismenge (Liter kaltes Wasser)
+in einen Anzeige-String mit immer genau einer Nachkommastelle.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">formatiereErgebnis</span><span class="p">(</span><span class="n">_</span> <span class="nv">liter</span><span class="p">:</span><span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>liter</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Menge kaltes Wasser in Liter</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>String mit formatierter Liter-Angabe, z.B. “0.3” oder “2.0”.</p>
 
                       </div>
                     </section>
@@ -864,8 +917,9 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
-<strong>Version 1:</strong> Nur Default-Catch für Fehlerbehandlung.</p>
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.</p>
+
+<p><strong>Version 1:</strong> Nur Default-Catch für Fehlerbehandlung.</p>
 
                       </div>
                       <div class="declaration">
@@ -892,8 +946,9 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
-<strong>Version 2:</strong> Catch-Blöcke für verschiedene Fehler-Typen.</p>
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.</p>
+
+<p><strong>Version 2:</strong> Catch-Blöcke für verschiedene Fehler-Typen.</p>
 
                       </div>
                       <div class="declaration">
@@ -920,8 +975,9 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
-<strong>Version 3:</strong> Ein Catch-Block mit Switch-Case zur Unterscheidung der verschiedenen Temperatur-Fehler.</p>
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.</p>
+
+<p><strong>Version 3:</strong> Ein Catch-Block mit Switch-Case zur Unterscheidung der verschiedenen Temperatur-Fehler.</p>
 
                       </div>
                       <div class="declaration">
@@ -948,8 +1004,9 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
-<strong>Version 4:</strong> Fehlerbehandlung im sog. <em>Optional Try</em> (<code>try?</code>).</p>
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.</p>
+
+<p><strong>Version 4:</strong> Fehlerbehandlung im sog. <em>Optional Try</em> (<code>try?</code>).</p>
 
                       </div>
                       <div class="declaration">
@@ -976,8 +1033,9 @@ ist. Dieses Textfeld ist so konfiguriert, dass nur positive Ganzzahlwerte
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Methode zur Durchführung der eigentlichen Berechnung.<br/>
-<strong>Version 5:</strong> Fehlerbehandlung mit sog. <em>Forced try</em> (<code>try!</code>).
+                        <p>Methode zur Durchführung der eigentlichen Berechnung.</p>
+
+<p><strong>Version 5:</strong> Fehlerbehandlung mit sog. <em>Forced try</em> (<code>try!</code>).
 - attention: Wenn die Berechnungs-Funktion einen Fehler wirft, dann stürzt die App ab.</p>
 
                       </div>
@@ -1130,18 +1188,19 @@ ist eine dieser Bedingungen nicht erfällt, dann wird eine für die Konfiguratio
 Wenn die App für die Konfiguration <code>RELEASE</code> gebaut wurde, dann wird ein <code>assert</code>
 mit nicht erfüllter Bedingung einfach ignoriert.</p>
 
-<p><a href='#konsole-sichtbar-machen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='konsole-sichtbar-machen'>Konsole sichtbar machen</h3></p>
+<p><a href='#konsole-sichtbar-machen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='konsole-sichtbar-machen'>Konsole sichtbar machen:</h3></p>
 
-<p>Die XCode-Konsole kann ggf. mit einer der folgenden beiden Möglichkeiten eingeblendet
+<p>Die XCode-Konsole kann ggf. mit einer der folgenden beiden Möglichkeiten
 eingeblendet werden:</p>
 
 <ul>
 <li>Menü-Eintrag: <code>View | Debug Area | Activate Console</code></li>
-<li>Tasten-Kombination: <code>Shift+Cmd+C</code>
-Die Konsole sollte rechts unten in XCode erscheinen.</li>
+<li>Tasten-Kombination: <code>Shift+Cmd+C</code></li>
 </ul>
 
-<p><a href='#build-konfiguration-einstellen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='build-konfiguration-einstellen'>Build-Konfiguration einstellen</h3></p>
+<p>Die Konsole sollte rechts unten in XCode erscheinen.</p>
+
+<p><a href='#build-konfiguration-einstellen' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='build-konfiguration-einstellen'>Build-Konfiguration einstellen:</h3></p>
 
 <ul>
 <li>Im <q>Project Navigation</q> auf den obersten Eintrag klicken (Projekt selbst).</li>
@@ -1298,7 +1357,7 @@ Methode wird für jeden Tastendruck (auch Loeschung) aufgerufen, also sind in re
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-13)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
