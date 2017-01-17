@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062895201E22D353001FE8FF /* TemperaturBerechnungOOP_v2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0628951F1E22D353001FE8FF /* TemperaturBerechnungOOP_v2.swift */; };
+		9CB7C6A41E1557E10057F1E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C6A31E1557E10057F1E4 /* AppDelegate.swift */; };
+		9CB7C6A61E1557E10057F1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C6A51E1557E10057F1E4 /* ViewController.swift */; };
+		9CB7C6A91E1557E10057F1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7C6A71E1557E10057F1E4 /* Main.storyboard */; };
+		9CB7C6AB1E1557E10057F1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7C6AA1E1557E10057F1E4 /* Assets.xcassets */; };
+		9CB7C6AE1E1557E10057F1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7C6AC1E1557E10057F1E4 /* LaunchScreen.storyboard */; };
+		9CB7C6B61E156E130057F1E4 /* TemperaturBerechnung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C6B51E156E130057F1E4 /* TemperaturBerechnung.swift */; };
+		9CC11D6C1E1C000C00A311B0 /* TemperaturBerechnungOOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC11D6B1E1C000C00A311B0 /* TemperaturBerechnungOOP.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0603A2A51E2EA60B004A6475 /* BeispieleVonFrameworkKlassen.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BeispieleVonFrameworkKlassen.playground; sourceTree = "<group>"; };
+		060ACB451E2ADB6200212926 /* RethrowBeispiel_1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RethrowBeispiel_1.playground; sourceTree = "<group>"; };
+		0612F6F81E2BAB60002D77A4 /* RethrowBeispiel_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RethrowBeispiel_2.playground; sourceTree = "<group>"; };
+		0628951F1E22D353001FE8FF /* TemperaturBerechnungOOP_v2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperaturBerechnungOOP_v2.swift; sourceTree = "<group>"; };
+		0652424D1E2438EC00C0C9E5 /* FehlertypenMitParametern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FehlertypenMitParametern.playground; sourceTree = "<group>"; };
+		06654AC01E2E41B8007FF1ED /* Vergleich_MitThrows.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Vergleich_MitThrows.playground; sourceTree = "<group>"; };
+		06654AC11E2E41E6007FF1ED /* Vergleich_OhneThrows.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Vergleich_OhneThrows.playground; sourceTree = "<group>"; };
+		9CB7C6A01E1557E10057F1E4 /* MischTempApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MischTempApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB7C6A31E1557E10057F1E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CB7C6A51E1557E10057F1E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CB7C6A81E1557E10057F1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CB7C6AA1E1557E10057F1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CB7C6AD1E1557E10057F1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CB7C6AF1E1557E10057F1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB7C6B51E156E130057F1E4 /* TemperaturBerechnung.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperaturBerechnung.swift; sourceTree = "<group>"; };
+		9CC11D6B1E1C000C00A311B0 /* TemperaturBerechnungOOP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperaturBerechnungOOP.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB7C69D1E1557E10057F1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CB7C6971E1557E00057F1E4 = {
+			isa = PBXGroup;
+			children = (
+				0603A2A51E2EA60B004A6475 /* BeispieleVonFrameworkKlassen.playground */,
+				06654AC11E2E41E6007FF1ED /* Vergleich_OhneThrows.playground */,
+				06654AC01E2E41B8007FF1ED /* Vergleich_MitThrows.playground */,
+				0652424D1E2438EC00C0C9E5 /* FehlertypenMitParametern.playground */,
+				060ACB451E2ADB6200212926 /* RethrowBeispiel_1.playground */,
+				0612F6F81E2BAB60002D77A4 /* RethrowBeispiel_2.playground */,
+				9CB7C6A21E1557E10057F1E4 /* MischTempApp */,
+				9CB7C6A11E1557E10057F1E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB7C6A11E1557E10057F1E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7C6A01E1557E10057F1E4 /* MischTempApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB7C6A21E1557E10057F1E4 /* MischTempApp */ = {
+			isa = PBXGroup;
+			children = (
+				9CB7C6A31E1557E10057F1E4 /* AppDelegate.swift */,
+				9CB7C6A51E1557E10057F1E4 /* ViewController.swift */,
+				0628951F1E22D353001FE8FF /* TemperaturBerechnungOOP_v2.swift */,
+				9CC11D6B1E1C000C00A311B0 /* TemperaturBerechnungOOP.swift */,
+				9CB7C6B51E156E130057F1E4 /* TemperaturBerechnung.swift */,
+				9CB7C6A71E1557E10057F1E4 /* Main.storyboard */,
+				9CB7C6AA1E1557E10057F1E4 /* Assets.xcassets */,
+				9CB7C6AC1E1557E10057F1E4 /* LaunchScreen.storyboard */,
+				9CB7C6AF1E1557E10057F1E4 /* Info.plist */,
+			);
+			path = MischTempApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CB7C69F1E1557E10057F1E4 /* MischTempApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB7C6B21E1557E10057F1E4 /* Build configuration list for PBXNativeTarget "MischTempApp" */;
+			buildPhases = (
+				9CB7C69C1E1557E10057F1E4 /* Sources */,
+				9CB7C69D1E1557E10057F1E4 /* Frameworks */,
+				9CB7C69E1E1557E10057F1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MischTempApp;
+			productName = MischTempMitSlider;
+			productReference = 9CB7C6A01E1557E10057F1E4 /* MischTempApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB7C6981E1557E00057F1E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MDe;
+				TargetAttributes = {
+					9CB7C69F1E1557E10057F1E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8DR2WFZDY5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9CB7C69B1E1557E00057F1E4 /* Build configuration list for PBXProject "MischTempApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CB7C6971E1557E00057F1E4;
+			productRefGroup = 9CB7C6A11E1557E10057F1E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CB7C69F1E1557E10057F1E4 /* MischTempApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB7C69E1E1557E10057F1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB7C6AE1E1557E10057F1E4 /* LaunchScreen.storyboard in Resources */,
+				9CB7C6AB1E1557E10057F1E4 /* Assets.xcassets in Resources */,
+				9CB7C6A91E1557E10057F1E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB7C69C1E1557E10057F1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC11D6C1E1C000C00A311B0 /* TemperaturBerechnungOOP.swift in Sources */,
+				9CB7C6A61E1557E10057F1E4 /* ViewController.swift in Sources */,
+				062895201E22D353001FE8FF /* TemperaturBerechnungOOP_v2.swift in Sources */,
+				9CB7C6A41E1557E10057F1E4 /* AppDelegate.swift in Sources */,
+				9CB7C6B61E156E130057F1E4 /* TemperaturBerechnung.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CB7C6A71E1557E10057F1E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB7C6A81E1557E10057F1E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CB7C6AC1E1557E10057F1E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB7C6AD1E1557E10057F1E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CB7C6B01E1557E10057F1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CB7C6B11E1557E10057F1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CB7C6B31E1557E10057F1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8DR2WFZDY5;
+				INFOPLIST_FILE = MischTempApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.mide.MischTempApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9CB7C6B41E1557E10057F1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8DR2WFZDY5;
+				INFOPLIST_FILE = MischTempApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.mide.MischTempApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB7C69B1E1557E00057F1E4 /* Build configuration list for PBXProject "MischTempApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB7C6B01E1557E10057F1E4 /* Debug */,
+				9CB7C6B11E1557E10057F1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB7C6B21E1557E10057F1E4 /* Build configuration list for PBXNativeTarget "MischTempApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB7C6B31E1557E10057F1E4 /* Debug */,
+				9CB7C6B41E1557E10057F1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CB7C6981E1557E00057F1E4 /* Project object */;
+}

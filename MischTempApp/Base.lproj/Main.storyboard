@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MischTempApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur kaltes Wasser:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhS-26-gf6" userLabel="LabelTempKaltesWasser">
+                                <rect key="frame" x="26" y="40" width="213.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur heißes Wasser:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-ci-EBt" userLabel="LabelTempHeissesWasser">
+                                <rect key="frame" x="26" y="125.5" width="219.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-e7-BDT" userLabel="SliderTempKaltesWasser">
+                                <rect key="frame" x="24" y="70.5" width="327" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSliderTempKaltWasserChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bvd-KS-Ffs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="95" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bdK-ip-KJ8" userLabel="SliderTempHeissesWasser">
+                                <rect key="frame" x="24" y="156" width="327" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSliderTempHeissesWasserChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="G7Z-Fg-AxI"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4az-gs-3LF" userLabel="SliderTempZiel">
+                                <rect key="frame" x="24" y="241.5" width="327" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSliderTempZielTempChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uGu-bv-spN"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmD-mE-3Xn" userLabel="LabelTempWertKaltesWasser">
+                                <rect key="frame" x="312" y="40" width="37" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r9-BO-0DA" userLabel="LabelTempWertHeissesWasser">
+                                <rect key="frame" x="309.5" y="125.5" width="39.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewünschte Mischtemperatur:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMX-wX-1G6" userLabel="LabelTempZiel">
+                                <rect key="frame" x="26" y="211" width="247.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3O-6w-h6x" userLabel="LabelTempWertZiel">
+                                <rect key="frame" x="310.5" y="211" width="38.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heißes Wasser (ml):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bV-G7-rxA" userLabel="LabelMengeHeissesWasser">
+                                <rect key="frame" x="26" y="296.5" width="160" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2000" borderStyle="bezel" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-ks-aCu" userLabel="TextFieldMengeHeissesWasser">
+                                <rect key="frame" x="236" y="296.5" width="113" height="26"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Sj-I0-WTN" userLabel="StackView_ButtonReihe1">
+                                <rect key="frame" x="26" y="357.5" width="323" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir7-lD-9yk" userLabel="ButtonCatch1">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Catch 1"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitCatch1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXn-7z-JQS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pg-Bv-ycA" userLabel="ButtonCatch2">
+                                        <rect key="frame" x="109.5" y="0.0" width="104" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Catch 2"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitCatch2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HuZ-l9-N3D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxG-D7-Nag" userLabel="ButtonCatch3">
+                                        <rect key="frame" x="218.5" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Catch 3"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitCatch3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxw-70-lvK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yKQ-Wj-gxa" userLabel="StackView_ButtonReihe2">
+                                <rect key="frame" x="26" y="400.5" width="323" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-st-zeN" userLabel="ButtonTryOpt">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Try?"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitTryOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TMo-mI-Nwc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vas-8J-eVp" userLabel="ButtonTryForce">
+                                        <rect key="frame" x="109.5" y="0.0" width="104" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Try!">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitTryForce:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3Z-Bn-Rky"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP0-s0-g60" userLabel="ButtonDefer">
+                                        <rect key="frame" x="218.5" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Defer"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitDefer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxm-Yz-pUu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HZx-Hw-UoS" userLabel="StackView_ButtonReihe3">
+                                <rect key="frame" x="26" y="443.5" width="323" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3by-PQ-ZCF" userLabel="ButtonOOP">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="OOP"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitOOP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ha-7k-Qmc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-Sv-CEP" userLabel="ButtonGuard">
+                                        <rect key="frame" x="109.5" y="0.0" width="104" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Guard"/>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitGuard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eat-IS-lMM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-fa-Vmn" userLabel="ButtonAssert">
+                                        <rect key="frame" x="218.5" y="0.0" width="104.5" height="33"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Assert">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButtonBerechnungMitAssert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6k-Lw-cBf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGg-Jz-Eih" userLabel="ButtonFatalError">
+                                <rect key="frame" x="26" y="493" width="104.5" height="33"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="FatalError">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonBerechnungMitFatalError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycj-7T-wVN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LhS-26-gf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="2hy-bl-Dce"/>
+                            <constraint firstItem="2Sj-I0-WTN" firstAttribute="top" secondItem="Yfh-ks-aCu" secondAttribute="bottom" constant="35" id="5gY-rO-g9s"/>
+                            <constraint firstItem="Yfh-ks-aCu" firstAttribute="leading" secondItem="4bV-G7-rxA" secondAttribute="trailing" constant="50" id="63o-Zy-Tzd"/>
+                            <constraint firstItem="k3O-6w-h6x" firstAttribute="top" secondItem="bdK-ip-KJ8" secondAttribute="bottom" constant="25" id="6Ke-dh-JIu"/>
+                            <constraint firstItem="4bV-G7-rxA" firstAttribute="top" secondItem="4az-gs-3LF" secondAttribute="bottom" constant="25" id="8SX-bZ-EYm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uiz-e7-BDT" secondAttribute="trailing" constant="10" id="8Uo-hj-PKt"/>
+                            <constraint firstItem="2r9-BO-0DA" firstAttribute="top" secondItem="uiz-e7-BDT" secondAttribute="bottom" constant="25" id="AL6-SX-0Bz"/>
+                            <constraint firstItem="HZx-Hw-UoS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="EDD-M6-hgT"/>
+                            <constraint firstItem="sGg-Jz-Eih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="EWT-C4-oRv"/>
+                            <constraint firstItem="sGg-Jz-Eih" firstAttribute="top" secondItem="0Lr-Sv-CEP" secondAttribute="bottom" constant="16.5" id="GVU-PI-ouO"/>
+                            <constraint firstItem="ZMX-wX-1G6" firstAttribute="top" secondItem="bdK-ip-KJ8" secondAttribute="bottom" constant="25" id="GsE-gM-r0C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3O-6w-h6x" secondAttribute="trailing" constant="10" id="HdT-8F-48W"/>
+                            <constraint firstItem="4az-gs-3LF" firstAttribute="top" secondItem="ZMX-wX-1G6" secondAttribute="bottom" constant="10" id="KyK-7B-pAz"/>
+                            <constraint firstItem="HZx-Hw-UoS" firstAttribute="top" secondItem="bf7-st-zeN" secondAttribute="bottom" constant="10" id="LlV-QX-Bmm"/>
+                            <constraint firstItem="u1g-ci-EBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="MV8-bS-Z7J"/>
+                            <constraint firstItem="uiz-e7-BDT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Mjv-pH-Sqf"/>
+                            <constraint firstItem="Yfh-ks-aCu" firstAttribute="top" secondItem="4az-gs-3LF" secondAttribute="bottom" constant="25" id="Oga-zf-BVo"/>
+                            <constraint firstItem="LhS-26-gf6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="QRn-hI-9QI"/>
+                            <constraint firstItem="u1g-ci-EBt" firstAttribute="top" secondItem="uiz-e7-BDT" secondAttribute="bottom" constant="25" id="R63-mt-5fU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JmD-mE-3Xn" secondAttribute="trailing" constant="10" id="RvQ-QM-iYz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4az-gs-3LF" secondAttribute="trailing" constant="10" id="SDh-4V-ZDZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Sj-I0-WTN" secondAttribute="trailing" constant="10" id="SWO-KP-cjQ"/>
+                            <constraint firstItem="bdK-ip-KJ8" firstAttribute="top" secondItem="u1g-ci-EBt" secondAttribute="bottom" constant="10" id="SeA-Xv-00M"/>
+                            <constraint firstItem="uiz-e7-BDT" firstAttribute="top" secondItem="LhS-26-gf6" secondAttribute="bottom" constant="10" id="See-Up-wSf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4az-gs-3LF" secondAttribute="trailing" constant="10" id="TLN-IO-b7m"/>
+                            <constraint firstItem="bdK-ip-KJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Tz1-au-zOg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2r9-BO-0DA" secondAttribute="trailing" constant="10" id="Z2t-vA-5dg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bdK-ip-KJ8" secondAttribute="trailing" constant="10" id="b3t-tk-8vJ"/>
+                            <constraint firstItem="4bV-G7-rxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="eLv-eJ-Ruj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yfh-ks-aCu" secondAttribute="trailing" constant="10" id="f3J-14-BBM"/>
+                            <constraint firstItem="JmD-mE-3Xn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ftN-ZI-xvD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yKQ-Wj-gxa" secondAttribute="trailing" constant="10" id="g2m-gG-inz"/>
+                            <constraint firstItem="sGg-Jz-Eih" firstAttribute="top" secondItem="0Lr-Sv-CEP" secondAttribute="bottom" constant="10" id="hZW-nm-fQk"/>
+                            <constraint firstItem="4az-gs-3LF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="jfk-jD-AXh"/>
+                            <constraint firstItem="sGg-Jz-Eih" firstAttribute="width" secondItem="0Lr-Sv-CEP" secondAttribute="width" id="lNh-St-It9"/>
+                            <constraint firstItem="yKQ-Wj-gxa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="pJw-ld-0wh"/>
+                            <constraint firstItem="2Sj-I0-WTN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="qTt-n9-Vpa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HZx-Hw-UoS" secondAttribute="trailing" constant="10" id="wDp-EQ-JoF"/>
+                            <constraint firstItem="yKQ-Wj-gxa" firstAttribute="top" secondItem="2Pg-Bv-ycA" secondAttribute="bottom" constant="10" id="zCG-ef-eg0"/>
+                            <constraint firstItem="4az-gs-3LF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="zdB-sn-RbT"/>
+                            <constraint firstItem="ZMX-wX-1G6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="zgq-vJ-EeX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelTempHeissesWasser" destination="2r9-BO-0DA" id="leH-eO-2Na"/>
+                        <outlet property="labelTempKaltesWasser" destination="JmD-mE-3Xn" id="adm-pZ-Fve"/>
+                        <outlet property="labelTempZiel" destination="k3O-6w-h6x" id="DCz-Q2-5sx"/>
+                        <outlet property="sliderTempHeissesWasser" destination="bdK-ip-KJ8" id="F60-Rg-Dzy"/>
+                        <outlet property="sliderTempKaltesWasser" destination="uiz-e7-BDT" id="URO-s9-SOB"/>
+                        <outlet property="sliderTempZiel" destination="4az-gs-3LF" id="Hkm-BM-KkV"/>
+                        <outlet property="textFieldMengeHeissesWasser" destination="Yfh-ks-aCu" id="4pe-BO-fvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42.399999999999999" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,14 @@
+# Dateien, in denen Finder Ordner-spezifische Einstellungen ablegt,
+# sollen nicht im Repo gespeichert werden.
+#
+# siehe auch: 
+# https://www.raywenderlich.com/13771/how-to-use-git-source-control-with-xcode-in-ios-6
+.DS_Store
+*.xcuserdatad
+build/
+
+
+# Ignores fuer Playground (siehe auch http://stackoverflow.com/a/35795325 )
+playground.xcworkspace
+
+
