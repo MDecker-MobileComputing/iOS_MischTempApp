@@ -1,61 +1,54 @@
 {
   "warnings": [
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 16,
       "symbol": "AppDelegate.window",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 19,
       "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 24,
       "symbol": "AppDelegate.applicationWillResignActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 29,
       "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 34,
       "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 38,
       "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/AppDelegate.swift",
+      "file": "/Users/michi/GitRepos/GitHub_MischTempApp/MischTempApp/AppDelegate.swift",
       "line": 42,
       "symbol": "AppDelegate.applicationWillTerminate(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michi/GitRepos/MischTempApp/MischTempApp/TemperaturBerechnung.swift",
-      "line": 35,
-      "symbol": "WasserMengenError.MengeHeissesWasserUngueltig",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/michi/GitRepos/MischTempApp"
+  "source_directory": "/Users/michi/GitRepos/GitHub_MischTempApp"
 }
