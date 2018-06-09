@@ -453,7 +453,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     /// mit nicht erfüllter Bedingung einfach ignoriert.
     ///
     ///
-    /// ### Konsole sichtbar machen:
+    /// ### Konsole sichtbar machen: ###
     ///
     /// Die XCode-Konsole kann ggf. mit einer der folgenden beiden Möglichkeiten
     /// eingeblendet werden:
@@ -464,7 +464,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     /// Die Konsole sollte rechts unten in XCode erscheinen.
     ///
     ///
-    /// ### Build-Konfiguration einstellen:
+    /// ### Build-Konfiguration einstellen: ###
     ///
     /// * Im "Project Navigation" auf den obersten Eintrag klicken (Projekt selbst).
     /// * In Hauptfenster auf Tab "Build Settings".
@@ -550,7 +550,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     /// um das Keyboard wieder verschwinden zu lassen,
     /// wenn nach Eingabe in UITextField-Instanz an eine Stelle außerhalb des Keyboards getappt wird.
     /// Ruft auch Berechnung auf.
-    func keyboardVerschwindenLassen() {
+    @objc func keyboardVerschwindenLassen() {
         view.endEditing(true)
     }
     
@@ -561,9 +561,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     /// - returns: `false` wenn die Textänderung verworfen werden soll.
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        // Prevent that 0 is entered as first digit
+        // Null als erste Ziffer verhindern
         if let currentDisplayText = textField.text {
-            if currentDisplayText.characters.count == 0 && string == "0" {
+            if currentDisplayText.count == 0 && string == "0" {
                 return false
             }
         }
