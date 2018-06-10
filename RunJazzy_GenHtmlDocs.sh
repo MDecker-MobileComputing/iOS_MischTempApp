@@ -21,12 +21,11 @@
 # Verzeichnis fuer Ergebnis-Dateien, wird ggf. erstellt.
 ORDNER_OUTPUT=../JazzyOutput/
 
-# Swift-Version auf Konsole ausgeben
 SWIFT_VERSION=$(xcrun swift -version | cut -d " " -f4)
 
 echo -e "\nSwift-Version gefunden: "${SWIFT_VERSION}"\n"
 
-jazzy --output $ORDNER_OUTPUT --min-acl private  --swift-version $SWIFT_VERSION
+jazzy --output $ORDNER_OUTPUT --min-acl private --swift-version $SWIFT_VERSION
 # --output <ORDNER>   : Ordner, in den erzeugte Dateien geschrieben werden.
 # --min-acl <LEVEL>   : Auch non-public Klassen und Structs beruecksichtigen.
 # --clean             : Ausgabe-Ordner vor Erzeugung neuer Dateien loeschen -- gefaehrlich!
