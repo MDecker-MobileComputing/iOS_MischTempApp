@@ -17,3 +17,10 @@ Siehe auch die mit [Jazzy](https://github.com/realm/jazzy) aus den Markdown-Komm
 ![Screenshot 2](screenshot_2.png)
 
 ![Screenshot 3](screenshot_3.png)
+
+<br>
+
+----
+# License
+
+See the [LICENSE file](LICENSE.md) for license rights and limitations (GPL).
